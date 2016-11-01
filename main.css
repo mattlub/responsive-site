@@ -1,0 +1,100 @@
+.container {
+	width: 100%;
+	text-align: center;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	border: 0px solid black;
+}
+
+/* nav and footer
+--------------------------- */
+
+.nav-container {
+	height: auto;
+	width: 100%;
+	background-color: none;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.nav {
+	border: 0px solid black;
+	margin: 1em auto;
+}
+
+.nav a {
+	text-decoration: none;
+	font-size: 0.8em;
+	font-weight: 600;
+	color: black;
+	margin: 0em 0.5em;
+}
+
+.nav a:hover {
+	text-decoration: none;
+	color: #779999;
+}
+
+.footer-container {
+	height: 200px;
+	width: 100%;
+	background-color: #779999;
+}
+
+/* general sections- eg about, projects
+--------------------------- */
+
+.section-container {
+	width: 95%;
+	margin: 10px auto;
+	background-color:#fff;
+	
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;	
+}
+
+h3 {
+	width: 100%;
+}
+
+.about p {
+	width: 90%;
+	margin: 0px auto 20px auto;
+}
+
+.project {
+  width: 95%;
+  background-color: #662222;
+  height: 200px;
+  margin: 10px auto;
+  padding: 0px;
+}
+
+
+@media (min-width: 450px) {
+
+  .project {
+  	width: 45%;
+  }
+}
+
+@media (min-width: 600px) {
+
+	.about p {
+		width: 70%;
+	}
+}
+
+@media (min-width: 800px) {
+
+	.container {
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+  .project {
+  	width: 30%;
+  }
+}
